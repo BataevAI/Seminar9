@@ -2,10 +2,10 @@
 // m = 2, n = 3 -> A(m,n) = 9
 
 
-long Akkerman (long n, long m) 
+int Akkerman (int n, int m) 
 
 {
-    long akk = 0;
+    int akk = 0;
 if (n == 0) return m + 1; 
 else if (m == 0) return Akkerman(n - 1, 1);
 
@@ -20,9 +20,9 @@ return akk;
 Console.WriteLine("Введите число N и M в качестве аргументов функции Аккерамна, а мы рискнем ее посчитать");
 
 Console.WriteLine("Введите число N:");
-long N = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число M:");
-long M = Convert.ToInt32(Console.ReadLine());
+int M = Convert.ToInt32(Console.ReadLine());
 
-long akker = Akkerman(N, M);
+int akker = Akkerman(N, M);
 Console.WriteLine($"Функция Аккермана при n = {N}, m = {M} будет равна: {akker}");
